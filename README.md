@@ -32,3 +32,24 @@ Example data:
     "search_center_z": 0
 }
 ```
+
+The returned JSON data will look like this:
+```json
+{
+    "crossroads": [
+        [-10391, 62, -5886],
+        [-10094, 69, -2432],
+        [-3671, 59, 671],
+        [281, 48, -8878],
+        [569, 52, -334],
+        [4386, 52, 2770],
+        [6642, 69, -9703],
+        [6504, 69, -5822],
+        [7529, 52, 10658],
+        [8018, 59, -3646]
+    ]
+}
+```
+
+As of right now the api is hosted at `https://mews.pythonanywhere.com/`
+
