@@ -1,5 +1,6 @@
 from src.internal import finder
 
+
 def test_generate_cin_input_post_1_16_1():
     options = finder.FinderOptions(
         game_version="1.16.1",
@@ -9,7 +10,7 @@ def test_generate_cin_input_post_1_16_1():
         max_y=255,
         search_radius=1_000,
         search_center_x=0,
-        search_center_z=0
+        search_center_z=0,
     )
 
     cin_input = finder.generate_cin_input(options)
@@ -26,7 +27,7 @@ def test_generate_cin_input_pre_1_16_1():
         max_y=255,
         search_radius=1_000,
         search_center_x=0,
-        search_center_z=0
+        search_center_z=0,
     )
 
     cin_input = finder.generate_cin_input(options)
@@ -43,7 +44,7 @@ def test_finder():
         max_y=255,
         search_radius=2000,
         search_center_x=0,
-        search_center_z=0
+        search_center_z=0,
     )
 
     crossroads = finder.find_crossroads(options)

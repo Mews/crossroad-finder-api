@@ -1,4 +1,5 @@
-import sys, os
+import os
+import sys
 
 src_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../src"))
 sys.path.insert(0, src_path)
@@ -6,13 +7,17 @@ sys.path.insert(0, src_path)
 # From https://flask.palletsprojects.com/en/stable/testing/
 
 import pytest
+
 from src.app import app as flask_app
+
 
 @pytest.fixture()
 def app():
-    flask_app.config.update({
-        "TESTING": True,
-    })
+    flask_app.config.update(
+        {
+            "TESTING": True,
+        }
+    )
 
     yield flask_app
 
@@ -32,5 +37,5 @@ def payload():
         "max_y": 255,
         "search_radius": 2000,
         "search_center_x": 0,
-        "search_center_z": 0
+        "search_center_z": 0,
     }
