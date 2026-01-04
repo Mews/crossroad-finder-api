@@ -12,6 +12,7 @@ jobs:
 
     permissions:
       contents: write
+      pull_request: write
 
     uses: Mews/.github/.github/workflows/run-python-tests.yaml@main
     with:
