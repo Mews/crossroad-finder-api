@@ -1,3 +1,5 @@
+[![Tests](https://github.com/Mews/crossroad-finder-api/actions/workflows/tests.yaml/badge.svg)](https://github.com/Mews/crossroad-finder-api/actions/workflows/tests.yaml) [![Coverage badge](https://github.com/Mews/crossroad-finder-api/raw/python-coverage-comment-action-data/badge.svg)](https://github.com/Mews/crossroad-finder-api/tree/python-coverage-comment-action-data)
+
 # crossroad-finder-api
 
 A flask api that uses the [CrossroadFinder tool](https://github.com/Gaider10/CrossroadFinder) by [Gaider10](https://github.com/Gaider10) to find nether fortress patterns.
