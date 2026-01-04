@@ -1,2 +1,6 @@
 flask
 gunicorn
+marshmallow
+pytest
+mypy
+pytest-cov
