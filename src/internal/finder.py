@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from typing import Optional
 import subprocess
+import platform
 
 from internal import parser
 from internal.parser import CrossroadShape, MinecraftVersion
@@ -40,7 +41,12 @@ def generate_cin_input(options:FinderOptions):
 
 
 def find_crossroads(options:FinderOptions):
-    result = subprocess.run("CrossroadFinder-v1.2.exe",
+    if platform.system() == "Windows":
+        bin_path = "bin/crossroadfinder_win.exe"
+    else:
+        bin_path = "bin/crossroadfinder_linux.exe"
+
+    result = subprocess.run(bin_path,
                    input=generate_cin_input(options),
                    text=True,
                    capture_output=True)
