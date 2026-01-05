@@ -53,3 +53,4 @@ The returned JSON data will look like this:
 
 As of right now the api is hosted at `https://mews.pythonanywhere.com/crossroad-finder`
 
+[Test the api!](https://reqbin.com/9xhbjmwv)
