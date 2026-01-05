@@ -46,7 +46,7 @@ def generate_cin_input(options: FinderOptions):
 
 def get_distance_to_search_center(crossroad, center_x, center_z):
     crossroad_x = crossroad[0]
-    crossroad_z = crossroad[1]
+    crossroad_z = crossroad[2]
 
     return ((crossroad_x - center_x) ** 2 + (crossroad_z - center_z) ** 2) ** 0.5
 
