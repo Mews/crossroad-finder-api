@@ -12,8 +12,8 @@
 | tests/conftest.py              |       16 |        0 |    100% |           |
 | tests/internal/test\_finder.py |       15 |        0 |    100% |           |
 | tests/internal/test\_parser.py |        8 |        0 |    100% |           |
-| tests/test\_app.py             |      126 |        0 |    100% |           |
-|                      **TOTAL** |  **282** |    **1** | **99%** |           |
+| tests/test\_app.py             |      134 |        0 |    100% |           |
+|                      **TOTAL** |  **290** |    **1** | **99%** |           |
 
 
 ## Setup coverage badge
