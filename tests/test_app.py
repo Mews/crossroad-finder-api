@@ -235,9 +235,16 @@ def test_valid_data_non_stripped_strings(client: FlaskClient, payload):
 
     assert response.status_code == 200
 
+    crossroads = response.json["crossroads"]
+
+    assert len(crossroads) == 2
+
+    assert [-1118, 54, -2062] in crossroads
+    assert [2418, 50, 1257] in crossroads
+
 
 def test_valid_data_all_data_as_strings(client: FlaskClient, payload):
-    payload["fortress_salt"] = 123
+    payload["fortress_salt"] = 30084232
 
     for key, value in payload.items():
         payload[key] = str(value)
@@ -245,3 +252,10 @@ def test_valid_data_all_data_as_strings(client: FlaskClient, payload):
     response = client.post("/", json=payload)
 
     assert response.status_code == 200
+
+    crossroads = response.json["crossroads"]
+
+    assert len(crossroads) == 2
+
+    assert [-1118, 54, -2062] in crossroads
+    assert [2418, 50, 1257] in crossroads
