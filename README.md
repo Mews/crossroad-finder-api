@@ -6,14 +6,14 @@
 |------------------------------- | -------: | -------: | ------: | --------: |
 | src/app.py                     |       21 |        1 |     95% |        43 |
 | src/internal/\_\_init\_\_.py   |        0 |        0 |    100% |           |
-| src/internal/finder.py         |       40 |        0 |    100% |           |
+| src/internal/finder.py         |       44 |        0 |    100% |           |
 | src/internal/parser.py         |       34 |        0 |    100% |           |
 | src/internal/schema.py         |       22 |        0 |    100% |           |
 | tests/conftest.py              |       16 |        0 |    100% |           |
 | tests/internal/test\_finder.py |       15 |        0 |    100% |           |
 | tests/internal/test\_parser.py |        8 |        0 |    100% |           |
 | tests/test\_app.py             |      134 |        0 |    100% |           |
-|                      **TOTAL** |  **290** |    **1** | **99%** |           |
+|                      **TOTAL** |  **294** |    **1** | **99%** |           |
 
 
 ## Setup coverage badge
