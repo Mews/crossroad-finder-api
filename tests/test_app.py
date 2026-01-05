@@ -223,8 +223,8 @@ def test_valid_data(client: FlaskClient, payload):
 
     assert len(crossroads) == 2
 
-    assert [-1118, 54, -2062] in crossroads
-    assert [2418, 50, 1257] in crossroads
+    assert crossroads[0] == [-1118, 54, -2062]
+    assert crossroads[1] == [2418, 50, 1257]
 
 
 def test_valid_data_non_stripped_strings(client: FlaskClient, payload):
@@ -239,8 +239,8 @@ def test_valid_data_non_stripped_strings(client: FlaskClient, payload):
 
     assert len(crossroads) == 2
 
-    assert [-1118, 54, -2062] in crossroads
-    assert [2418, 50, 1257] in crossroads
+    assert crossroads[0] == [-1118, 54, -2062]
+    assert crossroads[1] == [2418, 50, 1257]
 
 
 def test_valid_data_all_data_as_strings(client: FlaskClient, payload):
@@ -257,5 +257,5 @@ def test_valid_data_all_data_as_strings(client: FlaskClient, payload):
 
     assert len(crossroads) == 2
 
-    assert [-1118, 54, -2062] in crossroads
-    assert [2418, 50, 1257] in crossroads
+    assert crossroads[0] == [-1118, 54, -2062]
+    assert crossroads[1] == [2418, 50, 1257]
