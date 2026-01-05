@@ -234,3 +234,14 @@ def test_valid_data_non_stripped_strings(client: FlaskClient, payload):
     response = client.post("/", json=payload)
 
     assert response.status_code == 200
+
+
+def test_valid_data_all_data_as_strings(client: FlaskClient, payload):
+    payload["fortress_salt"] = 123
+
+    for key, value in payload.items():
+        payload[key] = str(value)
+
+    response = client.post("/", json=payload)
+
+    assert response.status_code == 200
