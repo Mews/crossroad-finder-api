@@ -47,9 +47,8 @@ def generate_cin_input(options: FinderOptions):
 def get_distance_to_search_center(crossroad, center_x, center_z):
     crossroad_x = crossroad[0]
     crossroad_z = crossroad[1]
-    
-    return ( (crossroad_x - center_x)**2 + (crossroad_z - center_z)**2 )**0.5
 
+    return ((crossroad_x - center_x) ** 2 + (crossroad_z - center_z) ** 2) ** 0.5
 
 
 def find_crossroads(options: FinderOptions):
@@ -70,4 +69,9 @@ def find_crossroads(options: FinderOptions):
             coords = tuple(int(coord) for coord in coords_str.split(" "))
             crossroads.append(coords)
 
-    return sorted(crossroads, key=lambda c:get_distance_to_search_center(c, options.search_center_x, options.search_center_z))
+    return sorted(
+        crossroads,
+        key=lambda c: get_distance_to_search_center(
+            c, options.search_center_x, options.search_center_z
+        ),
+    )
